@@ -1,0 +1,247 @@
+*{margin: 0; padding: 0;}
+        a{text-decoration: none;}
+        li{list-style: none;}
+
+        /*헤더*/
+        #header{
+            /* width: 1680px; */
+            width: 100%;
+            height: 322px; 
+            /* background: #ccc;  */
+            margin: 0 auto;
+            background-image: url('../images/sub_vis.jpg');
+            /* background-size: cover; */
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        /*헤더네비*/
+        #header > #header_nav{
+            width: 1200px; margin: 0 auto;
+        }
+
+        #header > #header_nav > img{
+            float: left;
+            margin-right: 150px;
+            margin-top: 30px;
+            width: 170px;
+        }
+        #header > #header_nav > .mid_depth > li{
+            float: left;
+            width: 150px; height: 50px;
+            text-align: center;
+            margin-top: 40px;
+            background: #eee;
+        }
+
+        /*가운데 메뉴*/
+        #header > #header_nav > .mid_depth > li > a, #header > #header_nav > .right_depth > li > a{
+            color: black;
+            line-height: 50px;
+        }
+
+        /*오른쪽 메뉴*/
+        #header > #header_nav > .right_depth > li{
+            float: right;
+            text-align: center;
+            margin-top: 40px;
+            background: #eee;
+            width: 70px; height: 50px;
+        }
+        #header > #header_nav > .right_depth > li:first-child{width: 50px;}
+
+        /*2차메뉴*/
+        .depth2 > li > a{
+            color: black;
+            font-size: 14px;
+        }
+        .depth2 > li{
+            width: 150px; height: 20px;
+            background: #bdbdbd; 
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid white;
+        }
+
+        /*비주얼부분*/
+        #visual1{
+            width: 1280px; height: 300px;
+            background: #dedede;
+            margin: 0 auto;
+        }
+        #visual1 > .vis-topNav{
+            width: 1220px; height: 50px;
+            
+        }
+
+        /*노란 메뉴바 좌측버튼 사이즈 조절*/
+        #visual1 > .vis-topNav > .vis-depth1 li:first-child{
+            width: 50px;
+            margin-left: 20px;
+        }
+        #visual1 > .vis-topNav > .vis-depth1{
+            /* 서브사업분야 부분 노랑탭 길이 좀길어서 수정함 */
+            width: 600px; 
+            height: 50px;
+            /* position: absolute; */
+            position: relative;
+            top: -25px;
+            margin: 0 auto;
+            /* left: 38%; right: 30%; */
+            /* margin-left: 50%; */
+            /* right:1680px; */
+            /* top: 295px; */
+            
+            background: yellow;
+            border-radius: 35px;
+            outline: 1px solid red;
+
+            /* 1-1뎁스 가리기 */
+            /* overflow: hidden; */
+        }
+        #visual1 > .vis-topNav > .vis-depth1 > li{
+            float: left;
+            line-height: 50px;
+            width: 160px;
+            text-align: center;
+            /* outline: 1px solid blue; */
+        }
+        /* 비주얼 > 네비(노랑탭) 두번째 목록 스타일*/
+        #visual1 > .vis-topNav > .vis-depth1 > li > .vis-depth1-1 li{
+            display: block;
+            outline: 1px solid red;
+            text-align: center;
+        }
+        #visual1 > .vis-topNav > .vis-depth1 > li > .vis-depth1-1 li:first-child{
+            font-size: 14px;
+            display: inline;
+        }
+        #visual1 > .vis-topNav > .vis-depth1 > li > .vis-depth1-1 li a {
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+        }
+        #visual1 > .vis-topT > h1{
+            text-align: center;
+            width: 1220px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        #visual1 > .vis-Nav{
+            width: 1064px;
+            height: 34px;
+            margin: 0 auto;
+            outline: 1px solid red;
+            position: relative;
+            
+        }
+        #visual1 > .vis-Nav > .vis-depth2 > li{
+            /* position: absolute; */
+            /* float: left; */
+            /* width: 250px; */
+            text-align: center;
+            line-height: 34px;
+            border: 1px solid black;
+            /* box-sizing: border-box; */
+            /* margin-top: 30px; */
+            /* outline: 1px solid blue; */
+            /* display: inline-block; */
+            float: left;
+        }
+
+        #visual2{width: 1200px; height: 500px;
+            margin: 0 auto;
+        }
+        #visual2 > .vis-showImg{
+            position: relative;
+            width: 1200px; height: 500px;
+            margin-bottom: 80px;
+        }
+        #visual2 > .vis-showImg > h1{
+            background: #ccc;
+            width: 500px; height: 60px;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 28%;
+            border: 1px solid black;
+        }
+
+        #visual2 > .vis-slider{
+            width: 1200px;
+            margin-bottom: 50px;
+        }
+        #visual2 > .vis-slider > .sliderBox{
+            margin: 0 auto;
+            width: 1000px; height: 150px;
+            background: #ccc;
+        }
+        #visual2 > .vis-slider > .sliderBox img{
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        #visual2 > .vis-slider > .leftImg{
+            float: left;
+            margin-top: 50px;
+        }
+        #visual2 > .vis-slider > .rightImg{
+            float: right;
+            margin-top: 50px;
+        }
+        #visual3{
+            width: 1000px; height: 300px;
+            background: #ccc;
+            margin: 0 auto; margin-top: 300px;
+            margin-bottom: 150px;
+        }
+
+        #footer{
+            width: 100%; height: 300px;
+            background: black;
+        }
+        #footer > .footer-up{
+            width: 1000px;
+            margin: 0 auto;
+            border-bottom: 1px solid #bdbdbd;
+        }
+        #footer > .footer-up > img{
+            margin-top: 50px;
+            padding-bottom: 10px;
+        }
+
+        #footer > .footer-up > .footer-text{
+            background: #5d5d5d;
+            width: 280px;
+            float: right;
+            padding: 10px;
+            margin-top: 70px;
+        }
+        #footer > .footer-up > .footer-text > li{
+            color: #ccc;
+            float: left;
+            margin-left: 10px;
+            width: 130px;
+        }
+        #footer > .footer-up > .footer-text > li > span{
+            margin-right: 10px;
+        }
+
+        #footer > .footer-down{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        #footer > .footer-down > .p1 > p{
+            color: #ccc;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        #footer > .footer-down > .p2 > p{
+            color: #ccc;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+        }
