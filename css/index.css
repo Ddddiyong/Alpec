@@ -5,27 +5,38 @@
         /*헤더*/
         #header{
             width: 1680px; height: 322px; 
-            background: #ccc; 
             margin: 0 auto;
+            background: #ccc;
+            position: relative;
+            background: url("../img/sub_vis.jpg");
+            background-position: bottom;
+            overflow: hidden;
         }
-
         /*헤더네비*/
         #header > #header_nav{
-            width: 1200px; margin: 0 auto;
+            width: 1200px; height: 90px;
+            margin: 0 auto;
         }
 
         #header > #header_nav > img{
             float: left;
-            margin-right: 150px;
-            margin-top: 30px;
+            width: 160px; height: 55px;
+            margin-right: 50px; margin-left: 20px;
+            margin-top: 20px;
         }
         #header > #header_nav > .mid_depth > li{
             float: left;
             width: 150px; height: 50px;
             text-align: center;
-            margin-top: 40px;
-            background: #eee;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background: none;
+            font-weight: bolder;
         }
+        #header > #header_nav > .mid_depth > li:hover{
+            transition: 0.4s;
+        }
+        
 
         /*가운데 메뉴*/
         #header > #header_nav > .mid_depth > li > a, #header > #header_nav > .right_depth > li > a{
@@ -43,16 +54,20 @@
         }
         #header > #header_nav > .right_depth > li:first-child{width: 50px;}
 
+        
+
         /*2차메뉴*/
         .depth2 > li > a{
             color: black;
             font-size: 14px;
+            text-align: center;
         }
+        .depth2 > li:first-child{margin-top: 20px;}
         .depth2 > li{
             width: 150px; height: 20px;
             background: #bdbdbd; 
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             border-bottom: 1px solid white;
         }
 
@@ -72,9 +87,9 @@
             margin-left: 20px;
         }
         #visual1 > .vis-topNav > .vis-depth1{
-            width: 470px; height: 50px;
+            width: 582.99px; height: 50px;
             position: absolute;
-            left: 38%; right: 30%;
+            left: 35%; right: 30%;
             top: 295px;
             background: yellow;
             border-radius: 35px;
@@ -82,9 +97,20 @@
         #visual1 > .vis-topNav > .vis-depth1 > li{
             float: left;
             line-height: 50px;
-            width: 130px;
+            width: 160px;
             text-align: center;
         }
+        #visual1 > .vis-topNav > .vis-depth1 > li a{
+            color: #5d5d5d;
+        }
+
+        #visual1 > .vis-topNav > .vis-depth1 > li:hover{
+            border: 1px dashed black;
+            box-sizing: border-box;
+            background:#F0DF10;
+            transition:0.2s;
+        }
+
         #visual1 > .vis-topT > h1{
             text-align: center;
             width: 1220px;
@@ -97,7 +123,13 @@
             height: 40px;
             margin: 0 auto;
         }
-        #visual1 > .vis-Nav > .vis-depth2 > li{
+
+        #visual1 > .vis-Nav > .vis-depth3 > li:hover{
+            background: #eee;
+            cursor: pointer;
+        }
+        #visual1 > .vis-Nav > .vis-depth3 > li > a{color: black;}
+        #visual1 > .vis-Nav > .vis-depth3 > li{
             float: left;
             width: 250px;
             text-align: center;
@@ -106,24 +138,43 @@
             box-sizing: border-box;
             margin-top: 30px;
         }
+        #visual1 > .vis-topNav > .vis-depth1 > li > .vis-depth2 > li{
+            width: 160px;
+            font-size: 12px;
+            text-align: center;
+            margin: 0 auto;
+            background: yellow;
+        }
+        #visual1 > .vis-Nav > .vis-depth3{
+            width: 1064px; height: 40px;
+        }
+
+        #visual1 > .vis-Nav > .vis-depth3 a.selected{
+            color: white;
+        }
+        #visual1 > .vis-Nav > .vis-depth3 > li.selected{
+            background: #48B5D8 ;
+        }
+        #visual1 > .vis-Nav > .vis-depth3 > li{
+            float: left;
+            width: 266px; height: 40px;
+            text-align: center;
+            line-height: 35px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
 
         #visual2{width: 1200px; height: 500px;
             margin: 0 auto;
         }
         #visual2 > .vis-showImg{
             position: relative;
-            width: 1200px; height: 500px;
+            width: 1240px; height: 600px;
             margin-bottom: 80px;
+            overflow: hidden;
         }
-        #visual2 > .vis-showImg > h1{
-            background: #ccc;
-            width: 500px; height: 60px;
-            line-height: 60px;
-            text-align: center;
-            position: absolute;
-            bottom: 20px;
-            left: 28%;
-            border: 1px solid black;
+        #visual2 > .vis-showImg > .visImg1{
+            width: 1240px;
         }
 
         #visual2 > .vis-slider{
@@ -134,23 +185,39 @@
             margin: 0 auto;
             width: 1000px; height: 150px;
             background: #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #visual2 > .vis-slider > .sliderBox > .sliderInbox{
+            outline: 1px solid red;
+            height: 150px;
+            float: left;
+            position: absolute;
+            overflow: hidden;
         }
         #visual2 > .vis-slider > .sliderBox img{
             margin-top: 15px;
             margin-left: 20px;
+            width: 225px; height: 120px;
+            float: left;
         }
         #visual2 > .vis-slider > .leftImg{
             float: left;
             margin-top: 50px;
+            width: 35px; height: 50px;
+            cursor: pointer;
         }
         #visual2 > .vis-slider > .rightImg{
             float: right;
             margin-top: 50px;
+            width: 35px; height: 50px;
+            cursor: pointer;
         }
         #visual3{
             width: 1000px; height: 300px;
             background: #ccc;
-            margin: 0 auto; margin-top: 300px;
+            margin: 0 auto; margin-top: 400px;
             margin-bottom: 150px;
         }
 
@@ -164,6 +231,7 @@
             border-bottom: 1px solid #bdbdbd;
         }
         #footer > .footer-up > img{
+            width: 160px; height: 55px;
             margin-top: 50px;
             padding-bottom: 10px;
         }
