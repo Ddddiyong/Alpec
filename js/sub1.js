@@ -18,12 +18,24 @@ $(function(){
 
     $('.mid_depth > li').hover(
         function(){
-            $('.depth2').stop().slideDown();
+            $('.depth2').stop().show();
             $('#header_nav').css('background','#fff');
+            $('.mid_depth > li > a').css('color','black');
+            $('.right_depth > li > a').css('color','black');
+            $('.right_depth > li').css('border','1px solid black');
+            $('.right_depth > li').css('border-radius','20px');
+            $('.right_depth > li:first').css('border','none');
+            $('.btn_Ham').css('color','black');
+            
         },
         function(){
-            $('.depth2').stop().slideUp();
+            $('.depth2').stop().hide();
             $('#header_nav').css('background','none');
+            $('.mid_depth > li > a').css('color','#000');
+            $('.right_depth > li').css('border','1px solid white');
+            $('.right_depth > li > a').css('color','white');
+            $('.right_depth > li').css('border-radius','20px');
+            $('.right_depth > li:first').css('border','none');
         }
     );
     $('.vis-depth1 > li').click(function(){

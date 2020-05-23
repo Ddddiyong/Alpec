@@ -6,24 +6,23 @@
         #header{
             width: 1680px; height: 322px; 
             margin: 0 auto;
-            background: #ccc;
             position: relative;
-            background: url("../img/sub_vis.jpg");
-            background-position: bottom;
             overflow: hidden;
+            background: url('../img/sub_vis.jpg');
         }
         /*헤더네비*/
         #header > #header_nav{
-            width: 1200px; height: 90px;
+            width: 1680px; height: 90px;
             margin: 0 auto;
         }
 
-        #header > #header_nav a > img{
+        #header > #header_nav > a > img{
             float: left;
             width: 160px; height: 55px;
-            margin-right: 50px; margin-left: 20px;
+            margin-right: 270px; margin-left: 50px;
             margin-top: 20px;
         }
+
         #header > #header_nav > .mid_depth > li{
             float: left;
             width: 150px; height: 50px;
@@ -36,36 +35,49 @@
         #header > #header_nav > .mid_depth > li:hover{
             transition: 0.4s;
         }
-        
+        #header > #header_nav > .mid_depth > li:hover a{
+            color: black;
+        }
 
         /*가운데 메뉴*/
-        #header > #header_nav > .mid_depth > li > a, #header > #header_nav > .right_depth > li > a{
+        #header > #header_nav > .mid_depth > li > a{
             color: black;
             line-height: 50px;
         }
-
+        #header > #header_nav > .right_depth > li > a{
+            color: white;
+            line-height: 28px;
+        }
+        
         /*오른쪽 메뉴*/
-        #header > #header_nav > .right_depth > li{
+        .right_depth > li{
             float: right;
             text-align: center;
-            margin-top: 40px;
-            background: #eee;
+            margin-top: 20px;
             width: 70px; height: 50px;
         }
-        #header > #header_nav > .right_depth > li:first-child{width: 50px;}
-
+        #header > #header_nav > .right_depth > li:first-child{
+            width: 50px; margin-right: 30px; border: none; margin-top: 33px;
+        }
+        #header > #header_nav > .right_depth > li:last-child{
+            border: 1px solid white; margin-right: 20px;
+            border-radius: 30px; height: 30px; margin-top: 30px;
+            line-height: 0px;
+        }
         
 
         /*2차메뉴*/
         .depth2 > li > a{
-            color: black;
+            color: #fff;
             font-size: 14px;
             text-align: center;
         }
-        .depth2 > li:first-child{margin-top: 20px;}
+        .depth2 > li:first-child{
+            margin-top: 20px;
+        }
         .depth2 > li{
             width: 150px; height: 20px;
-            background: #bdbdbd; 
+            background-color:rgba(221, 221, 221, 0.7);
             padding-top: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid white;
@@ -238,7 +250,7 @@
 
         #footer > .footer-up > .footer-text{
             background: #5d5d5d;
-            width: 280px;
+            width: 300px;
             float: right;
             padding: 10px;
             margin-top: 70px;
