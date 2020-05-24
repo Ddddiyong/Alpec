@@ -1,13 +1,4 @@
-// $(document).ready(function(){
-//     $('.bannerBox').bxslider({
-//         auto:true,
-//         speed:500,
-//         pause:5000,
-//         mode:'horizontal',
-//         pager:false,
-//         captions:false,
-//     });
-// });
+
 $(function(){
     $('.vis-depth3 > li').click(function(){
         // 클래스 제거(상태 초기화)

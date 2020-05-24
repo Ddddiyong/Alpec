@@ -11,14 +11,14 @@
         }
         /*헤더네비*/
         #header > #header_nav{
-            width: 1680px; height: 90px;
+            width: 1224px; height: 82px;
             margin: 0 auto;
         }
 
         #header > #header_nav > a > img{
             float: left;
             width: 160px; height: 55px;
-            margin-right: 270px; margin-left: 50px;
+            margin-right: 80px; margin-left: 28px;
             margin-top: 20px;
         }
 
@@ -27,12 +27,14 @@
             width: 150px; height: 50px;
             text-align: center;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 60px;
             background: none;
             font-weight: bolder;
+            /* border: 1px solid red; */
         }
         #header > #header_nav > .mid_depth > li:hover{
             transition: 0.4s;
+            position: relative;
         }
         #header > #header_nav > .mid_depth > li:hover a{
             color: black;
@@ -41,7 +43,7 @@
         /*가운데 메뉴*/
         #header > #header_nav > .mid_depth > li > a{
             color: white;
-            line-height: 50px;
+            line-height: 42px;
         }
         #header > #header_nav > .right_depth > li > a{
             color: white;
@@ -54,13 +56,14 @@
             text-align: center;
             margin-top: 20px;
             width: 70px; height: 50px;
+            margin-right: 28px;
         }
         #header > #header_nav > .right_depth > li:first-child{
-            height:50px; width: 50px; margin-right: 30px; border: none; margin-top: 33px;
+            height:50px; width: 50px; margin-right: 28px; border: none; margin-top: 28px;
         }
         #header > #header_nav > .right_depth > li:last-child{
             border: 1px solid white; margin-right: 20px;
-            border-radius: 30px; height: 30px; margin-top: 30px;
+            border-radius: 30px; height: 30px; margin-top: 25px;
             line-height: 0px;
         }
         
@@ -88,7 +91,7 @@
             position: absolute;
             width: 1680px; height: 760px;
             overflow: hidden;
-            z-index: -1;
+            z-index: -3;
         }
         .banner-text1, .banner-text2,.banner-text3{width: 1680px; height: 760px;}
         .banner-text1 > h4{
@@ -117,12 +120,17 @@
             position: absolute;
             right: 0;
             top: 45%;
-            background: skyblue; color: black;
+            background: skyblue;
             line-height: 25px;
             width: 50px; height: 200px;
             text-align: center;
+            transition: 0.4s;
         }
-    
+        .fixBox:hover{
+            background: darkblue;}
+        .fixBox:hover a{color: white;}
+
+
         
     /*컨텐츠*/
         /*컨텐츠1*/
@@ -150,7 +158,6 @@
         .conBox > .conBox2 > .conBox3{
             background: #ccc;
             width: 228px; height: 230px;
-            border: 1px solid black;
             overflow: hidden;
         }
         .conBox{
@@ -176,83 +183,82 @@
             padding-top: 15px;
             margin-bottom: 30px;
         }
-        #con2 > .con2-title{
+        #con2 .con2-title{
             width: 640px; height: 80px;
-            margin-top: 60px;
+            /* outline: 1px solid red; */
+            margin-top: 15px;
         }
-        #con2 > .con2-con{
+        #con2 .con2-con{
             width: 639px; height: 440px;
             /* outline: 1px solid red; */
             float: left;
         }
-        #con2 > .con2-con > .con2-aside{
+        #con2 .con2-con > .con2-aside{
             width: 90px; height: 440px;
             /* outline: 1px solid red; */
             float: left;
         }
-        #con2 > .con2-con > .con2-title > h1{
+        #con2 .con2-con > .con2-title > h1{
             font-size: 26px;
             text-align: left;
             margin-left: 20px;
             margin-top: 10px;
         }
-        #con2 > .con2-con > .con2-title{
+        #con2 .con2-con > .con2-title{
             float: left;
             width: 420px; height: 100px;
             /* outline: 1px solid red; */
             margin-bottom: 10px;
         }
-        #con2 > .con2-con > .con2-title2{
+        #con2 .con2-con > .con2-title2{
             float: left;
             width: 420px; height: 100px;
             /* outline: 1px solid red; */
             margin-bottom: 10px;
         }
-        #con2 > .con2-con > .con2-title2 > h1{
+        #con2 .con2-con > .con2-title2 > h1{
             font-size: 16px;
             line-height: 20px;
             text-align: left;
             margin-left: 20px;
             margin-top: 10px;
         }
-        #con2 > .con2-con > .con2-title3 >.con2-title3-btn > h4 > a{
+        #con2 .con2-con > .con2-title3 >.con2-title3-btn > h4 > a{
             color: white;
         }
-        #con2 > .con2-con > .con2-title3 >.con2-title3-btn > h4{
+        #con2 .con2-con > .con2-title3 >.con2-title3-btn > h4{
             width: 220px; height: 50px;
             text-align: center; cursor: pointer;
             border: 1px solid white;
         }
-        #con2 > .con2-con > .con2-title4 >.con2-title4-box > ul > li{
+        #con2 .con2-con > .con2-title4 >.con2-title4-box > ul > li{
             float: left;
             margin-left: 20px;
         }
-        #con2 > .con2-con > .con2-title4 >.con2-title4-box img{
+        #con2 .con2-con > .con2-title4 >.con2-title4-box img{
             margin-top: 17px; cursor: pointer;
         }
-        #con2 > .con2-con > .con2-title4 >.con2-title4-box{
+        #con2 .con2-con > .con2-title4 >.con2-title4-box{
             width: 500px; height: 80px;
             /* outline: 1px solid red; */
             float: left;
         }
-        #con2 > .con2-con > .con2-title4{
-            z-index: 3;
-        }
-        #con2 > .con2-con > .con2-title3{
+
+        #con2 .con2-con > .con2-title3{
             float: left;
             line-height: 50px;
             width: 220px; height: 100px;
             /* outline: 1px solid red; */
             margin-bottom: 20px;
         }
-        #con2 > .con2-con > .con2-aside > .aside-menu{
+        #con2 .con2-con > .con2-aside > .aside-menu{
             text-align: center;
             line-height: 30px;
         }
-        #con2 > .con2-con > .con2-aside > .aside-menu > li{
+        #con2 .con2-con > .con2-aside > .aside-menu > li{
             cursor: pointer; padding-top: 10px; padding-bottom: 10px;
         }
-        #con2 > .con2-con > .con2-aside > .aside-menu > li:hover{background: #fff; transition: 0.4s;}
+        #con2 .con2-con > .con2-aside > .aside-menu > li:hover{background: #fff; transition: 0.4s;}
         #con2 h2{
             margin-left: 100px; font-size:30px; line-height: 70px;
         }
@@ -261,7 +267,7 @@
             background: #f26c4f;
             position: absolute;
             left: 0; top: 145px;
-            z-index: -5;
+            z-index: 2;
         }
         .conRight img{position: absolute;width: 100%; height: 100%;}
         .conRight{
@@ -270,7 +276,7 @@
             position: absolute;
             right: 0; bottom: 5%;
             overflow: hidden;
-            z-index: -1;
+            z-index: 3;
         }
         /*컨텐츠2 끝*/
 

@@ -12,14 +12,14 @@
         }
         /*헤더네비*/
         #header > #header_nav{
-            width: 1680px; height: 90px;
+            width: 1224px; height: 82px;
             margin: 0 auto;
         }
 
         #header > #header_nav > a > img{
             float: left;
             width: 160px; height: 55px;
-            margin-right: 270px; margin-left: 50px;
+            margin-right: 80px; margin-left: 28px;
             margin-top: 20px;
         }
 
@@ -42,7 +42,7 @@
         /*가운데 메뉴*/
         #header > #header_nav > .mid_depth > li > a{
             color: black;
-            line-height: 50px;
+            line-height: 42px;
         }
         #header > #header_nav > .right_depth > li > a{
             color: white;
@@ -78,10 +78,13 @@
         .depth2 > li{
             width: 150px; height: 20px;
             background-color:rgba(221, 221, 221, 0.7);
+            line-height: 20px;
             padding-top: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid white;
         }
+
+
 
         /*비주얼부분*/
         #visual1{
@@ -90,7 +93,8 @@
             margin: 0 auto;
         }
         #visual1 > .vis-topNav{
-            width: 1220px; height: 50px;
+            width: 1280px; height: 50px;
+            /* outline: 2px solid red; */
         }
 
         /*노란 메뉴바 좌측버튼 사이즈 조절*/
@@ -101,8 +105,10 @@
         #visual1 > .vis-topNav > .vis-depth1{
             width: 582.99px; height: 50px;
             position: absolute;
-            left: 35%; right: 30%;
+            left: 33%; right: 30%;
+            /* top: -25px; */
             top: 295px;
+            margin: 0 auto;
             background: yellow;
             border-radius: 35px;
         }
@@ -125,14 +131,14 @@
 
         #visual1 > .vis-topT > h1{
             text-align: center;
-            width: 1220px;
+            width: 1280px;
             padding-top: 40px;
             padding-bottom: 40px;
         }
 
         #visual1 > .vis-Nav{
-            width: 1000px;
-            height: 40px;
+            width: 1064px;
+            height: 34px;
             margin: 0 auto;
         }
 
@@ -176,66 +182,70 @@
             box-sizing: border-box;
         }
 
-        #visual2{width: 1200px; height: 500px;
+        #visual2{width: 1240px; height: 600px;
             margin: 0 auto;
+            
         }
         #visual2 > .vis-showImg{
             position: relative;
             width: 1240px; height: 600px;
             margin-bottom: 80px;
             overflow: hidden;
+            /* outline: 2px solid red; */
         }
         #visual2 > .vis-showImg > .visImg1{
             width: 1240px;
         }
-
-        #visual2 > .vis-slider{
-            width: 1200px;
-            margin-bottom: 50px;
-        }
-        #visual2 > .vis-slider > .sliderBox{
+        .vis-slider {
+            width: 1124px;
+            height: 370px;
             margin: 0 auto;
-            width: 1000px; height: 150px;
-            background: #ccc;
-            position: relative;
+            /* position: relative; */
+        }
+        .vis-slider > .sliderBox{
+            margin: 0 auto;
+            width: 1120px;
+            height: 270px;
+            /* background: #ccc; */
+            /* position: absolute; */
             overflow: hidden;
+            /* outline: 2px solid red; */
         }
 
-        #visual2 > .vis-slider > .sliderBox > .sliderInbox{
-            outline: 1px solid red;
+      .vis-slider > .sliderBox > .slider{
+            /* outline: 1px solid red; */
             height: 150px;
             float: left;
-            position: absolute;
+            /* position: absolute; */
             overflow: hidden;
         }
-        #visual2 > .vis-slider > .sliderBox img{
-            margin-top: 15px;
-            margin-left: 20px;
-            width: 225px; height: 120px;
+        .vis-slider > .sliderBox > .slider img{
+            /* margin-top: 15px;
+            margin-left: 20px; */
+            /* width: 225px; height: 270px; */
             float: left;
         }
-        #visual2 > .vis-slider > .leftImg{
+        .vis-slider > .leftImg{
             float: left;
             margin-top: 50px;
             width: 35px; height: 50px;
             cursor: pointer;
         }
-        #visual2 > .vis-slider > .rightImg{
+        .vis-slider > .rightImg{
             float: right;
             margin-top: 50px;
             width: 35px; height: 50px;
             cursor: pointer;
         }
-        #visual3{
-            width: 1000px; height: 300px;
-            background: #ccc;
-            margin: 0 auto; margin-top: 400px;
-            margin-bottom: 150px;
-        }
+        
 
         #footer{
+            /* position: absolute; */
             width: 100%; height: 300px;
+            bottom: 0;
             background: black;
+            outline: 3px solid pink;
+            /* clear: both; */
         }
         #footer > .footer-up{
             width: 1000px;
@@ -250,7 +260,7 @@
 
         #footer > .footer-up > .footer-text{
             background: #5d5d5d;
-            width: 300px;
+            width: 280px;
             float: right;
             padding: 10px;
             margin-top: 70px;
