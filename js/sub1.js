@@ -38,10 +38,15 @@ $(function(){
             $('.right_depth > li:first').css('border','none');
         }
     );
-    $('.vis-depth1 > li').click(function(){
+    $('.vis-depth1 > li').on('click',function(){
             $(this).children('.vis-depth2').stop().slideToggle();
-        }
-    );
+        });
+    $('.vis-depth1').mouseout(function(){
+            $('.vis-depth2').stop().hide();
+        });
+
+
+
 
     $(document).ready(function(){
         $(".rightImg").unbind();
