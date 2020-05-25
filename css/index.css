@@ -1,232 +1,378 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
         a{text-decoration: none;}
         li{list-style: none;}
 
         /*헤더*/
         #header{
-            width: 1680px; height: 322px; 
+            width: 1680px; height: 760px; 
             margin: 0 auto;
-            background: #ccc;
             position: relative;
-            background: url("../img/sub_vis.jpg");
-            background-position: bottom;
             overflow: hidden;
         }
         /*헤더네비*/
         #header > #header_nav{
-            width: 1200px; height: 90px;
+            width: 1224px; height: 82px;
             margin: 0 auto;
         }
 
-        #header > #header_nav > img{
+        #header > #header_nav > a > img{
             float: left;
             width: 160px; height: 55px;
-            margin-right: 50px; margin-left: 20px;
+            margin-right: 80px; margin-left: 28px;
             margin-top: 20px;
         }
+
         #header > #header_nav > .mid_depth > li{
             float: left;
             width: 150px; height: 50px;
             text-align: center;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 60px;
             background: none;
             font-weight: bolder;
+            /* border: 1px solid red; */
         }
         #header > #header_nav > .mid_depth > li:hover{
             transition: 0.4s;
+            position: relative;
         }
-        
+        #header > #header_nav > .mid_depth > li:hover a{
+            color: black;
+        }
 
         /*가운데 메뉴*/
-        #header > #header_nav > .mid_depth > li > a, #header > #header_nav > .right_depth > li > a{
-            color: black;
-            line-height: 50px;
+        #header > #header_nav > .mid_depth > li > a{
+            color: white;
+            line-height: 42px;
         }
-
+        #header > #header_nav > .right_depth > li > a{
+            color: white;
+            line-height: 28px;
+        }
+        
         /*오른쪽 메뉴*/
-        #header > #header_nav > .right_depth > li{
+        .right_depth > li{
             float: right;
             text-align: center;
-            margin-top: 40px;
-            background: #eee;
+            margin-top: 20px;
             width: 70px; height: 50px;
+            margin-right: 28px;
         }
-        #header > #header_nav > .right_depth > li:first-child{width: 50px;}
-
+        #header > #header_nav > .right_depth > li:first-child{
+            height:50px; width: 50px; margin-right: 28px; border: none; margin-top: 28px;
+        }
+        #header > #header_nav > .right_depth > li:last-child{
+            border: 1px solid white; margin-right: 20px;
+            border-radius: 30px; height: 30px; margin-top: 25px;
+            line-height: 0px;
+        }
         
 
         /*2차메뉴*/
         .depth2 > li > a{
-            color: black;
+            color: #fff;
             font-size: 14px;
             text-align: center;
         }
-        .depth2 > li:first-child{margin-top: 20px;}
+        .depth2 > li:first-child{
+            margin-top: 20px;
+        }
         .depth2 > li{
             width: 150px; height: 20px;
-            background: #bdbdbd; 
-            padding-top: 20px;
-            padding-bottom: 20px;
+            line-height: 0px;
+            background-color:rgba(221, 221, 221, 0.7);
+            padding-top: 35px;
+            padding-bottom: 35px;
             border-bottom: 1px solid white;
         }
 
-        /*비주얼부분*/
-        #visual1{
-            width: 1280px; height: 300px;
-            background: #dedede;
-            margin: 0 auto;
-        }
-        #visual1 > .vis-topNav{
-            width: 1220px; height: 50px;
-        }
-
-        /*노란 메뉴바 좌측버튼 사이즈 조절*/
-        #visual1 > .vis-topNav > .vis-depth1 li:first-child{
-            width: 50px;
-            margin-left: 20px;
-        }
-        #visual1 > .vis-topNav > .vis-depth1{
-            width: 582.99px; height: 50px;
+        /*배너*/
+        #banner{
             position: absolute;
-            left: 35%; right: 30%;
-            top: 295px;
-            background: yellow;
-            border-radius: 35px;
+            width: 1680px; height: 760px;
+            overflow: hidden;
+            z-index: -3;
         }
-        #visual1 > .vis-topNav > .vis-depth1 > li{
+        .banner-text1, .banner-text2,.banner-text3{width: 1680px; height: 760px;}
+        .banner-text1 > h4{
+            color: white; font-size: 40px; left: 28%; top: 40%;
+            position: absolute;
+            width: 1680px; height: 760px;
+        }
+        .banner-text2 > h4,.banner-text3 > h4{
+            color: white; font-size: 40px; left: 34%; top: 40%;
+            position: absolute;
+            width: 1680px; height: 760px;
+        }
+            
+        #banner > .bannerIn > .bannerBox{
+            position: absolute;
+            height:672px;
+            overflow: hidden;
+        }
+        .ban-pos{
+            top: 0;
             float: left;
+        }
+        .fixBox h4{margin-top: 35px;}
+        .fixBox h4 > a{color: black; z-index: 5; writing-mode: vertical-lr;}
+        .fixBox{
+            position: absolute;
+            right: 0;
+            top: 45%;
+            background: skyblue;
+            line-height: 25px;
+            width: 50px; height: 200px;
+            text-align: center;
+            transition: 0.4s;
+        }
+        .fixBox:hover{
+            background: darkblue;}
+        .fixBox:hover a{color: white;}
+
+
+        
+    /*컨텐츠*/
+        /*컨텐츠1*/
+        #con{
+            width: 1280px; height: 602px;
+            margin: 0 auto;
+            margin-bottom: 90px;
+            /* outline: 1px solid red; */
+        }
+        #con h1, #con4 h1, #con3 h1{
+            text-align: center;
             line-height: 50px;
-            width: 160px;
-            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 30px;
         }
-        #visual1 > .vis-topNav > .vis-depth1 > li a{
-            color: #5d5d5d;
-        }
-
-        #visual1 > .vis-topNav > .vis-depth1 > li:hover{
-            border: 1px dashed black;
-            box-sizing: border-box;
-            background:#F0DF10;
-            transition:0.2s;
-        }
-
-        #visual1 > .vis-topT > h1{
-            text-align: center;
-            width: 1220px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        #visual1 > .vis-Nav{
-            width: 1000px;
-            height: 40px;
-            margin: 0 auto;
-        }
-
-        #visual1 > .vis-Nav > .vis-depth3 > li:hover{
-            background: #eee;
-            cursor: pointer;
-        }
-        #visual1 > .vis-Nav > .vis-depth3 > li > a{color: black;}
-        #visual1 > .vis-Nav > .vis-depth3 > li{
+        .conBox > .conBox2{
+            width: 230px; height: 300px;
+            margin-right: 10px;
+            margin-left: 10px;
             float: left;
-            width: 250px;
-            text-align: center;
-            line-height: 40px;
-            border: 1px solid black;
             box-sizing: border-box;
-            margin-top: 30px;
         }
-        #visual1 > .vis-topNav > .vis-depth1 > li > .vis-depth2 > li{
-            width: 160px;
-            font-size: 12px;
-            text-align: center;
+        .conBox > .conBox2 h4{text-align: center; margin-top: 20px; font-size: 22px;}
+        .conBox > .conBox2 > .conBox3 img{width: 100%; height: 100%;}
+        .conBox > .conBox2 > .conBox3{
+            background: #ccc;
+            width: 228px; height: 230px;
+            overflow: hidden;
+        }
+        .conBox{
+            width: 1000px; height: 500px;
             margin: 0 auto;
-            background: yellow;
+            margin-top: 70px;
+            /* outline: 1px solid red; */
         }
-        #visual1 > .vis-Nav > .vis-depth3{
-            width: 1064px; height: 40px;
-        }
+        /*컨텐츠1 끝*/
 
-        #visual1 > .vis-Nav > .vis-depth3 a.selected{
+
+        /*컨텐츠2*/
+        #con2{
+            width: 1280px; height: 820px;
+            margin: 0 auto; 
+            /* outline: 1px solid red; */
+            position: relative;
+        }
+        #con2 > h1{
+            width: 1280px; height: 100px;
+            text-align: center;
+            line-height: 50px;
+            padding-top: 15px;
+            margin-bottom: 30px;
+        }
+        #con2 .con2-title{
+            width: 640px; height: 80px;
+            /* outline: 1px solid red; */
+            margin-top: 15px;
+        }
+        #con2 .con2-con{
+            width: 639px; height: 440px;
+            /* outline: 1px solid red; */
+            float: left;
+        }
+        #con2 .con2-con > .con2-aside{
+            width: 90px; height: 440px;
+            /* outline: 1px solid red; */
+            float: left;
+        }
+        #con2 .con2-con > .con2-title > h1{
+            font-size: 26px;
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #con2 .con2-con > .con2-title{
+            float: left;
+            width: 420px; height: 100px;
+            /* outline: 1px solid red; */
+            margin-bottom: 10px;
+        }
+        #con2 .con2-con > .con2-title2{
+            float: left;
+            width: 420px; height: 100px;
+            /* outline: 1px solid red; */
+            margin-bottom: 10px;
+        }
+        #con2 .con2-con > .con2-title2 > h1{
+            font-size: 16px;
+            line-height: 20px;
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #con2 .con2-con > .con2-title3 >.con2-title3-btn > h4 > a{
             color: white;
         }
-        #visual1 > .vis-Nav > .vis-depth3 > li.selected{
-            background: #48B5D8 ;
+        #con2 .con2-con > .con2-title3 >.con2-title3-btn > h4{
+            width: 220px; height: 50px;
+            text-align: center; cursor: pointer;
+            border: 1px solid white;
         }
-        #visual1 > .vis-Nav > .vis-depth3 > li{
+        #con2 .con2-con > .con2-title4 >.con2-title4-box > ul > li{
             float: left;
-            width: 266px; height: 40px;
+            margin-left: 20px;
+        }
+        #con2 .con2-con > .con2-title4 >.con2-title4-box img{
+            margin-top: 17px; cursor: pointer;
+        }
+        #con2 .con2-con > .con2-title4 >.con2-title4-box{
+            width: 500px; height: 80px;
+            /* outline: 1px solid red; */
+            float: left;
+        }
+
+        #con2 .con2-con > .con2-title3{
+            float: left;
+            line-height: 50px;
+            width: 220px; height: 100px;
+            /* outline: 1px solid red; */
+            margin-bottom: 20px;
+        }
+        #con2 .con2-con > .con2-aside > .aside-menu{
             text-align: center;
-            line-height: 35px;
-            border: 1px solid black;
+            line-height: 30px;
+        }
+        #con2 .con2-con > .con2-aside > .aside-menu > li{
+            cursor: pointer; padding-top: 10px; padding-bottom: 10px;
+        }
+        #con2 .con2-con > .con2-aside > .aside-menu > li:hover{background: #fff; transition: 0.4s;}
+        #con2 h2{
+            margin-left: 100px; font-size:30px; line-height: 70px;
+        }
+        .conLeft{
+            width: 640px; height: 537px;
+            background: #f26c4f;
+            position: absolute;
+            left: 0; top: 145px;
+            z-index: 2;
+        }
+        .conRight img{position: absolute;width: 100%; height: 100%;}
+        .conRight{
+            width: 732px; height: 530px;
+            background: #bd8cbf;
+            position: absolute;
+            right: 0; bottom: 5%;
+            overflow: hidden;
+            z-index: 3;
+        }
+        /*컨텐츠2 끝*/
+
+
+        /*컨텐츠3*/
+        #con3{
+            width: 1280px; height: 520px;
+            margin: 0 auto;
+            /* outline: 1px solid red; */
+        }
+        .news{margin: 0 auto; width: 1060px; height: 236px;}
+        #con3 h1{text-align: center;}
+        .newsL-up,.newsR-up{border-bottom: 1px solid #bdbdbd;}
+        .con3-newsL{
+            width: 520px; 
+            height: 236px; 
+            float: left; 
+            margin-right: 20px; 
+            box-sizing: border-box;
+            background: #4b4b4b;
+        }
+        .con3-newsR{
+            width: 520px; 
+            height: 236px; 
+            float: left; 
+            box-sizing: border-box;
+            background: #4b4b4b;
+        }
+        .newsL-up h4:first-child, .newsR-up h4:first-child{float: left;}
+        .newsL-up h4:last-child, .newsR-up h4:last-child{float: right; font-size: 14px;}
+        .newsL-up, .newsR-up{
+            height: 35px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+            color: white;
+        }
+        .newsL-up a, .newsR-up a{
+            color: white;
+        }
+        .newsL-down > .newsL-nL, .newsR-down > .newsR-nR{
+            margin-left: 50px;
+            margin-right: 50px;
+            float: left;
+        }
+        .newsL-down > .newsL-nL2, .newsR-down > .newsR-nR2{
+            margin-left: 50px;
+            margin-right: 50px;
+            float: right;
+        }
+        .newsL-down > .newsL-nL2 a,
+        .newsR-down > .newsR-nR2 a,
+        .newsL-down > .newsL-nL a,
+        .newsR-down > .newsR-nR a{
+            color: white;
+            line-height: 30px;
+        }
+
+
+        
+        /*컨텐츠3 끝*/
+
+        /*컨텐츠4*/
+        #con4{
+            width: 1280px; height: 477px;
+            margin: 0 auto;
+            /* outline: 1px solid red; */
+        }
+        .conBox-2 h4{text-align: center; margin-top: 15px; font-size: 22px;}
+        .conBox-1{
+            width: 1000px; height: 400px;
+            margin: 0 auto;
+            /* outline: 1px solid red; */
+        }
+        .conBox-2{
+            width: 100px; height: 130px;
+            float: left;
+            margin-left: 120px;
+        }
+        .conBox-3{
+            width: 100px; height: 100px;
+            
             box-sizing: border-box;
         }
+        .conBox-3 img{width: 100px; height: 100px;}
+        
+        /*컨텐츠4 끝*/
 
-        #visual2{width: 1200px; height: 500px;
-            margin: 0 auto;
-        }
-        #visual2 > .vis-showImg{
-            position: relative;
-            width: 1240px; height: 600px;
-            margin-bottom: 80px;
-            overflow: hidden;
-        }
-        #visual2 > .vis-showImg > .visImg1{
-            width: 1240px;
-        }
-
-        #visual2 > .vis-slider{
-            width: 1200px;
-            margin-bottom: 50px;
-        }
-        #visual2 > .vis-slider > .sliderBox{
-            margin: 0 auto;
-            width: 1000px; height: 150px;
-            background: #ccc;
-            position: relative;
-            overflow: hidden;
-        }
-
-        #visual2 > .vis-slider > .sliderBox > .sliderInbox{
-            outline: 1px solid red;
-            height: 150px;
-            float: left;
-            position: absolute;
-            overflow: hidden;
-        }
-        #visual2 > .vis-slider > .sliderBox img{
-            margin-top: 15px;
-            margin-left: 20px;
-            width: 225px; height: 120px;
-            float: left;
-        }
-        #visual2 > .vis-slider > .leftImg{
-            float: left;
-            margin-top: 50px;
-            width: 35px; height: 50px;
-            cursor: pointer;
-        }
-        #visual2 > .vis-slider > .rightImg{
-            float: right;
-            margin-top: 50px;
-            width: 35px; height: 50px;
-            cursor: pointer;
-        }
-        #visual3{
-            width: 1000px; height: 300px;
-            background: #ccc;
-            margin: 0 auto; margin-top: 400px;
-            margin-bottom: 150px;
-        }
-
+        /*푸터*/
         #footer{
             width: 100%; height: 300px;
             background: black;
         }
         #footer > .footer-up{
-            width: 1000px;
+            width: 1280px;
             margin: 0 auto;
             border-bottom: 1px solid #bdbdbd;
         }
@@ -238,10 +384,10 @@
 
         #footer > .footer-up > .footer-text{
             background: #5d5d5d;
-            width: 280px;
+            width: 300px;
             float: right;
             padding: 10px;
-            margin-top: 70px;
+            margin-top: 60px;
         }
         #footer > .footer-up > .footer-text > li{
             color: #ccc;
@@ -255,7 +401,7 @@
 
         #footer > .footer-down{
             margin: 0 auto;
-            width: 1000px;
+            width: 1280px;
         }
         #footer > .footer-down > .p1 > p{
             color: #ccc;
