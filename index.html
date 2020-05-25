@@ -4,9 +4,17 @@
         <meta charset="utf-8">
         <meta name="ViewPort" content="width=device-width, initial-scale=1,0">
         <title>Alpec Cop</title>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
         <link href="css/index.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  
+
     </head>
 
     <style>
@@ -15,18 +23,48 @@
 
     <body>
         <div id="header">
-            <div id="header_nav">
 
-                <!--임시-->
-                <img src="img/alpec_logo.png">
+        <!--배너-->
+        <div id="banner">
+            <div class="bannerIn">
+                <ul class="bannerBox">
+                    <li class="ban-pos">
+                        <a href="#"><img src="img/main_vis1.jpeg"></a>
+                        <div class="banner-text1">
+                            <h4>세상을 바꾸는 힘있는 기술 글로벌 기업 알펙</h4>
+                        </div>
+                    </li>
+                    <!-- <li class="ban-pos"><a href="#"><img src="img/main_vis2.jpg"></a>
+                        <div class="banner-text2">
+                            <h4>인간을 위한 기술 글로벌 기업 알펙</h4>
+                        </div>
+                    </li>
+                    <li class="ban-pos"><a href="#"><img src="img/main_vis3.jpg"></a>
+                        <div class="banner-text3">
+                            <h4>불가능에 도전하는 기술 일류 알펙</h4>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="fixBox">
+            <h4><a href="sub_direction.html">찾 아 오 시 는 길</a></h4>
+        </div>
+
+            <div id="header_nav">
+                <a href="index.html">
+                    <img src="img/alpec_logo.png">
+                </a>
 
                 <!--헤더네비게이션-->
                 <ul class="mid_depth">
-                    <li><a href="#">회사소개</a>
+                    <li><a href="sub_w.html">회사소개</a>
                         <ul class="depth2">
+                            <li><a href="sub_w.html">인사말</a></li>
                             <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="sub_direction.html">찾아오시는길</a></li>
                         </ul></li>
 
                     <li><a href="#">기업분야</a>
@@ -36,9 +74,9 @@
                             <li><a href="#">서브메뉴</a></li>
                         </ul></li>
                     
-                    <li><a href="#">사업분야</a>
+                    <li><a href="sub1.html">사업분야</a>
                         <ul class="depth2">
-                            <li><a href="#">서브메뉴</a></li>
+                            <li><a href="sub1.html">사업분야</a></li>
                             <li><a href="#">서브메뉴</a></li>
                             <li><a href="#">서브메뉴</a></li>
                         </ul></li>
@@ -59,114 +97,190 @@
 
                 <!--헤더네비게이션 햄버거메뉴-->
                 <ul class="right_depth">
-                    <li><a href="#"><img src="https://placeimg.com/50/50" class="btn_Ham"></a></li>
+                    <li><a href="#"><span class="material-icons">menu</span></a></li>
                     <li><a href="#">ENG</a></li>
                 </ul>
             </div>
         </div>
 
-        <!--헤더 아랫부분-->
-        <div id="visual1">
-            <div class="vis-topNav">
-                <ul class="vis-depth1">
-                    <li><a href="#">home</a></li>
 
-                    <li><a href="#">메뉴</a>
-                        <ul class="vis-depth2">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">메뉴</a>
-                        <ul class="vis-depth2">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#">메뉴</a>
-                        <ul class="vis-depth2">
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                            <li><a href="#">서브메뉴</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="vis-topT"><h1>여기는 텍스트</h1></div>
-            <div class="vis-Nav">
-                <ul class="vis-depth3">
-                    <li class="selected"><a href="#">목록</a></li>
-                    <li><a href="#">목록</a></li>
-                    <li><a href="#">목록</a></li>
-                    <li><a href="#">목록</a></li>
-                </ul>
+        <!--콘텐츠-->
+        <div id="con">
+            <div class="conBox">
+                <h1>/<br>기업문화</h1>
+                <div class="conBox2">
+                    <div class="conBox3">
+                        <img src="img/gi-yun.jpg">
+                    </div>
+                    <h4>윤리경영</h4>
+                </div>
+                <div class="conBox2">
+                    <div class="conBox3">
+                        <img src="img/gi-pum.jpg">
+                    </div>
+                    <h4>품질경영</h4>
+                </div>
+                <div class="conBox2">
+                    <div class="conBox3">
+                        <img src="img/gi-an.jpg">
+                    </div>
+                    <h4>안전경영</h4>
+                </div>
+                <div class="conBox2">
+                    <div class="conBox3">
+                        <img src="img/gi-hwan.jpg">
+                    </div>
+                    <h4>환경경영</h4>
+                </div>
             </div>
         </div>
 
-        <!--비주얼 이미지-->
-        <div id="visual2">
-            <div class="vis-showImg">
-                <img src="img/sub_03_01_01_big1.jpg" class="visImg1">
-            </div>
+        <!--컨텐츠2-->
+        <div id="con2">
+            <h1>/<br>사업분야</h1>
             
-            <div class="vis-slider">
-                <img src="img/arrow-left.png" class="leftImg">
-                <img src="img/arrow-right.png" class="rightImg">
-                <div class="sliderBox">
-                    <div class="sliderInbox">
+            <div class="conLeft">
+                <div class="con2-title">
+                    <h2>title타이틀</h2>
+                </div>
+                <div class="con2-con">
+                    <div class="con2-aside">
+                        <ul class="aside-menu">
+                            <li class="aside1">목록</li>
+                            <li class="aside2">목록</li>
+                            <li class="aside3">목록</li>
+                            <li class="aside4">목록</li>
+                        </ul>
+                    </div>
+                    <div class="con2-title">
+                        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+                    </div>
+                    <div class="con2-title2">
+                        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, illum repudiandae modi beatae veritatis molestias, necessitatibus alias accusamus harum blanditiis</h1>
+                    </div>
+                    <div class="con2-title3">
+                        <div class="con2-title3-btn">
+                            <h4><a href="sub1.html">+ more</a></h4>
+                        </div>
+                    </div>
+                    <div class="con2-title4">
+                        <div class="con2-title4-box">
+                            <ul>
+                                <li><img src="img/sub_03_01_01_big1.jpg" class="box1"></li>
+                                <li><img src="img/sub_03_01_01_big2.jpg" class="box2"></li>
+                                <li><img src="img/sub_03_01_01_big3.jpg" class="box3"></li>
+                                <li><img src="img/sub_03_01_01_big4.jpg" class="box4"></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                            <a href="#"><img src="img/sub_03_01_01_big1.jpg"alt="1"></a>
-                            <a><img src="img/sub_03_01_01_big2.jpg"alt="2"></a>
-                            <a><img src="img/sub_03_01_01_big3.jpg"alt="3"></a>
-                            <a><img src="img/sub_03_01_01_big4.jpg"alt="4"></a>
+                </div>
+            </div>
+            <div class="conRight">
+                <img class="bigImg1" src="img/sub_03_01_01_big1.jpg">
+                <img class="bigImg2" src="img/sub_03_01_01_big2.jpg">
+                <img class="bigImg3" src="img/sub_03_01_01_big3.jpg" class="box3">
+                <img class="bigImg4" src="img/sub_03_01_01_big4.jpg">
+            </div>
+        </div>
 
+        <!--컨텐츠3-->
+        <div id="con3">
+            <h1>/<br>알펙뉴스</h1>
+            <div class="news">
+                <div class="con3-newsL">
+                    <div class="newsL-up">
+                        <h4>알펙소식</h4>
+                        <h4><a href="sub1.html">more +</a></h4>
+                    </div>
 
+                    <div class="newsL-down">
+                        <ul class="newsL-nL">
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                        </ul>
+                        <ul class="newsL-nL2">
+                            <li>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                            <a><img src="img/sub_03_01_02_big1.jpg"alt="5"></a>
-                            <a><img src="img/sub_03_01_02_big2.jpg"alt="6"></a>
-                            <a><img src="img/sub_03_01_02_big3.jpg"alt="7"></a>
-                            <a><img src="img/sub_03_01_02_big4.jpg"alt="8"></a>
+                <div class="con3-newsR">
+                    <div class="newsR-up">
+                        <h4>알펙소식</h4>
+                        <h4><a href="#">more +</a></h4>
+                    </div>
 
-
-
-                            <a><img src="img/sub_03_01_03_big1.jpg"alt="9"></a>
-                            <a><img src="img/sub_03_01_03_big2.jpg"alt="10"></a>
-                            <a><img src="img/sub_03_01_03_big3.jpg"alt="11"></a>
-                            <a><img src="img/sub_03_01_03_big4.jpg"alt="12"></a>
-
-
-
-                            <a><img src="img/sub_03_01_04_big1.jpg"alt="13"></a>
-                            <a><img src="img/sub_03_01_04_big2.jpg"alt="14"></a>
-                            <a><img src="img/sub_03_01_04_big3.jpg"alt="15"></a>
-                            <a><img src="img/sub_03_01_04_big4.jpg"alt="16"></a>
-
-
-
-                            <a><img src="img/sub_03_02_big1.jpg"alt="17"></a>
-                            <a><img src="img/sub_03_02_big2.jpg"alt="18"></a>
-                            <a><img src="img/sub_03_02_big3.jpg"alt="19"></a>
-
-
-
-                            <a><img src="img/sub_03_03_big1.jpg"alt="20"></a>
-                            <a><img src="img/sub_03_03_big2.jpg"alt="21"></a>
-
+                    <div class="newsR-down">
+                        <ul class="newsR-nR">
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a><br>
+                                <a href="#">Lorem ipsum dolor sit.</a>
+                            </li>
+                        </ul>
+                        <ul class="newsR-nR2">
+                            <li>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a><br>
+                                <a href="#">2020-05-22</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--슬라이더 하단-->
-        <div id="visual3">
-            <div class="text-a">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt similique earum reprehenderit corrupti vitae omnis blanditiis ab sapiente! Vitae qui praesentium perspiciatis hic odit, provident est sequi amet nulla nostrum.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, nostrum ducimus. Dolores possimus recusandae inventore hic ipsum libero reprehenderit, saepe nostrum, quia ipsam nemo, facilis atque itaque fugiat mollitia temporibus?</p>
+        <!--컨텐츠4-->
+        <div id="con4">
+            <div class="conBox-1">
+                <h1>/<br>고객지원</h1>
+
+                <div class="conBox-2">
+                    <div class="conBox-3">
+                        <a href="#"><img src="img/notice.svg"></a>
+                    </div>
+                    <h4>공지사항</h4>
+                </div>
+                
+                <div class="conBox-2">
+                    <div class="conBox-3">
+                        <a href="#"><img src="img/reference.svg"></a>
+                    </div>
+                    <h4>자료실</h4>
+                </div>
+
+                <div class="conBox-2">
+                    <div class="conBox-3">
+                        <a href="#"><img src="img/q&a.svg"></a>
+                    </div>
+                    <h4>Q&N</h4>
+                </div>
+
+                <div class="conBox-2">
+                    <div class="conBox-3">
+                        <a href="#"><img src="img/estimate.svg"></a>
+                    </div>
+                    <h4>견적문의</h4>
+                </div>
             </div>
         </div>
+
 
         <!--푸터-->
         <div id="footer">

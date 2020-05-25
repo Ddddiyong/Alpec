@@ -1,0 +1,138 @@
+
+        /*비주얼부분*/
+        #visual1{
+            width: 1280px; height: 200px;
+            /* background: #dedede; */
+            margin: 0 auto;
+        }
+        #visual1 > .vis-topNav{
+            width: 1280px; height: 50px;
+            /* outline: 2px solid red; */
+        }
+
+        /*노란 메뉴바 좌측버튼 사이즈 조절*/
+        #visual1 > .vis-topNav > .vis-depth1 li:first-child{
+            width: 50px;
+            margin-left: 20px;
+        }
+        #visual1 > .vis-topNav > .vis-depth1{
+            width: 470px; height: 50px;
+            position: relative;
+            /* left: 38%; right: 30%; */
+            top: -25px;
+            margin: 0 auto;
+            background: yellow;
+            border-radius: 35px;
+        }
+        #visual1 > .vis-topNav > .vis-depth1 > li{
+            float: left;
+            line-height: 50px;
+            width: 130px;
+            text-align: center; 
+        }
+        #visual1 > .vis-topT > h1{
+            text-align: center;
+            width: 1280px;
+            height: 250px;
+            line-height: 250px;
+            font-size: 52px;
+            font-weight: normal;
+            /* outline: 2px solid red; */
+        }
+        /* 대표인사 section */
+        #mid {
+            /* outline: 2px solid red; */
+            width: 1280px;
+            height: 700px;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        #mid > #img_wrap{
+            position: relative;
+            width: 1280px;
+        }
+        #mid > #img_wrap > #left {
+            float: left;
+            width: 640px;
+            padding-left: 50px;
+            /* outline: 2px solid green; */
+            margin-right: 30px;
+        }
+        #mid > #img_wrap > #left > h1 {
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        #mid > #img_wrap > #left > h1 > span {
+            color: #666;
+            font-weight: normal;
+        }
+        #mid > #img_wrap > #left > p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #mid > #img_wrap > #left > h2 {
+            color: #5679a5;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* #mid > #img_wrap > #right {
+            width: 400px; 
+             outline: 4px solid purple;
+        } */
+
+        /* END 대표인사 section */
+        #footer{
+            width: 100%; height: 300px;
+            background: black;
+        }
+        #footer > .footer-up{
+            width: 1000px;
+            margin: 0 auto;
+            border-bottom: 1px solid #bdbdbd;
+        }
+        #footer > .footer-up > img{
+            margin-top: 50px;
+            padding-bottom: 10px;
+            width: 160px;
+            height: 55px;
+        }
+
+        #footer > .footer-up > .footer-text{
+            background: #5d5d5d;
+            width: 280px;
+            float: right;
+            padding: 10px;
+            margin-top: 70px;
+        }
+        #footer > .footer-up > .footer-text > li{
+            color: #ccc;
+            float: left;
+            margin-left: 10px;
+            width: 130px;
+        }
+        #footer > .footer-up > .footer-text > li > span{
+            margin-right: 10px;
+        }
+
+        #footer > .footer-down{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        #footer > .footer-down > .p1 > p{
+            color: #ccc;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        #footer > .footer-down > .p2 > p{
+            color: #ccc;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+        }
