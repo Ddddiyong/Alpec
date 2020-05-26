@@ -13,7 +13,7 @@ $(function () {
 
 
     $('.depth2').hide();
-    $('.vis-depth2').hide();
+    // $('.vis-depth2').hide();
     // $('#visual3').hide();
     // $('.vis-slider2').hide();
     // $('#visual4').hide();
@@ -41,14 +41,29 @@ $(function () {
             $('.right_depth > li:first').css('border', 'none');
         }
     );
-    $('.vis-depth1 > li').on('click',function () {
-        $('.vis-depth2').stop().slideUp();
-        $(this).children('.vis-depth2').stop().slideToggle();
-    });
-    $('.vis-depth2').mouseout(function () {
-        $(this).children('.vis-depth2').stop().slideUp();
-        console.log('out')
-    });
+    // $('.vis-depth1 > li').on('click',function () {
+    //     $('.vis-depth2').stop().slideUp();
+    //     $(this).children('.vis-depth2').stop().slideToggle();
+    // });
+    // $('.vis-depth2').mouseout(function () {
+    //     $(this).children('.vis-depth2').stop().slideUp();
+    //     console.log('out')
+    // });
+
+    $('.vis-depth2').css('display', 'none');
+    $('.vis-depth1 > li').on('click', function(){
+    $('.vis-depth2').stop().slideUp(200);
+    $(this).find('.vis-depth2').stop().slideToggle(200);
+    })
+    
+    // mouseout대신 mouseleave 
+    $('.vis-depth1 > li').on('mouseleave', function(){
+        $(this).find('.vis-depth2').stop().slideUp(200);
+    })
+    
+    $('.vis-depth2').on('mouseover', function(){
+        $(this).stop().slideDown(200);
+    })
 
     //depth3 목록 클릭시 화면 전환
     // $('#visMenu1').click(function(){
@@ -141,6 +156,8 @@ $(function () {
         $('#visual2 >.vis-showImg > img').attr("src", img_sub[0].prodImg8)
         console.log('tab2', img_sub[0].prodImg8);
     });
+
+
 
 
 

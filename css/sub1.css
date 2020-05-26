@@ -7,13 +7,14 @@
             width: 1680px; height: 322px; 
             margin: 0 auto;
             position: relative;
-            overflow: hidden;
             background: url('../img/sub_vis.jpg');
         }
         /*헤더네비*/
         #header > #header_nav{
             width: 1224px; height: 82px;
             margin: 0 auto;
+            z-index: 2;
+            position: relative;
         }
 
         #header > #header_nav > a > img{
@@ -78,11 +79,10 @@
         .depth2 > li{
             width: 150px; height: 20px;
             background-color:rgba(221, 221, 221, 0.7);
-            line-height: 20px;
+            line-height: 10px;
             padding-top: 20px;
-            padding-bottom: 40px;
+            padding-bottom: 25px;
             border-bottom: 1px solid white;
-            
         }
 
 
@@ -128,9 +128,9 @@
         }
 
         #visual1 > .vis-topNav > .vis-depth1 > li:hover{
-            /* border: 1px dashed black; */
+            border: 1px dashed black;
             box-sizing: border-box;
-            background:#ffcb08;
+            background:#F0DF10;
             transition:0.2s;
         }
 
@@ -269,7 +269,7 @@
             width: 100%; height: 300px;
             bottom: 0;
             background: black;
-            /* outline: 3px solid pink; */
+            outline: 3px solid pink;
             /* clear: both; */
         }
         #footer > .footer-up{
@@ -376,6 +376,7 @@
             line-height: 300px;
             font-size: 52px;
             /* background: #fff; */
+            z-index: -1;
         }
         .vis-depth1  img {
             width: 20px; 
